@@ -60,12 +60,7 @@ The `sync_all_commands` function takes these parameters:
 
 1. Notice that you need the `Server Members Intent`. This is because this library uses the `discord.Guild.get_member()` function for parameters that have the `discord.Member` annotation. This intent is critical to the library and without it, most checks and parameters with the `discord.Member` annotation may error. Please make sure you have this enabled.
 
-
-2. Embeds are not supported if they are hidden. You can make messages not hidden by setting `send_hidden` to `False` when calling the `sync_all_commands` function. You can send up to 10 embeds per message.
-
-
-3. Make sure you replace all `await ctx.channel.send()` with `await ctx.send()`. This is because the library overrides the `ctx.send()` object so it works with slash commands. It will return a class that has most of the attributes a regular `discord.Message` object has. It also has `await edit()` and `await delete()` methods.
-
+2. Make sure you replace all `await ctx.channel.send()` with `await ctx.send()`. This is because the library overrides the `ctx.send()` object so it works with slash commands. It will return a class that has most of the attributes a regular `discord.Message` object has. It also has `await edit()` and `await delete()` methods.
 
 4. The library will not start listening for commands until it finishes syncing commands.
 
