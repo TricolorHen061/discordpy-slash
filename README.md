@@ -57,7 +57,6 @@ The `sync_all_commands` function takes these parameters:
 
 `error_function`: A function that will be called if an exception is raised. The function must have two parameters: `context`, and `error`. The `context` will be a `SlashContext` object, and the `error` will be the exception that is raised. This will override the default error system which means exceptions won't be raised unless you manually raise them with `raise error`. This parameter is optional and defaults to `None`. 
 
-`button_functions`: A list of functions the library can access when a button is pressed. Read more below. This parameter is optional and defaults to `[]`
 
 # How do I implement buttons into my bot?
 With discordpy-slash, implementing buttons into your bot is easy.
