@@ -150,4 +150,4 @@ This is because it takes up to 1 hour for slash commands to fan out to all the g
 
 # How does it work?
 
-When you call the `sync_all_commands` function, this library iterates through all commands and automatically determines the paramaters every command needs. Then, it adds all commands to Discord. When someone runs a slash command, Discord sends an "INTERACTION_CREATE" event to your bot, which the library will detect and respond to by calling the command function.
+When you call the `sync_all_commands` function, this library iterates through all commands and automatically determines the paramaters every command needs. Then, it adds all commands to Discord. When someone runs a slash command, Discord sends an "INTERACTION_CREATE" event to your bot, which the library will detect and respond to by calling the appropriate command function.
