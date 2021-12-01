@@ -61,7 +61,7 @@ The `sync_all_commands` function takes these parameters:
 # How do I implement buttons into my bot?
 With discordpy-slash, implementing buttons into your bot is easy.
 
-#### Buttons
+#### Displaying buttons
 
 The first thing you have to do is tell the library to give the message buttons. The `SlashContext.send()` function has a `buttons` parameter to do this. When calling the function, you need to give it a list of `Button` objects. Here is an example:
 
