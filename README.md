@@ -135,7 +135,7 @@ In the above example, when the button is pressed, the `test` function is called.
 # Things to note
 
 
-1. Make sure you replace all `await ctx.channel.send()` with `await ctx.send()`. This is because the library overrides the `ctx.send()` object so it works with slash commands. It will return a class that has most of the attributes a regular `discord.Message` object has. It also has `await edit()` and `await delete()` methods.
+1. Make sure you replace all `await ctx.channel.send()` with `await ctx.send()`. This is because the library overrides the `ctx.send()` object so it works with slash commands, but not `await ctx.channel.send()`. It will return a class that has most of the attributes a regular `discord.Message` object has. It also has `await edit()` and `await delete()` methods.
 
 
 2. Checks like `@has_permissions()` work with this library. 
